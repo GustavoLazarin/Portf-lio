@@ -26,8 +26,8 @@ export default function Home() {
               <h1 className="title-1 font-semibold max-w-screen-md">Sou o Gustavo Faccio Lazarin, desenvolvedor web <span className="text-secondary">Full Stack.</span></h1>
               <p className="">Apaixonado por solucionar problemas de forma criativa e eficaz, sempre buscando aprimorar minhas habilidades.</p>
               <div className="flex gap-5">
-                <button className="button primary"><Link href="/projects">Ver projetos</Link></button>
-                <button className="ball-btn brightness bg-white"><Link href="https://github.com/GustavoLazarin/" target="_blank"><FaGithub color="black"/></Link></button>
+                <Link href="/projects"><button className="button primary">Ver projetos</button></Link>
+                <Link href="https://github.com/GustavoLazarin/" target="_blank"><button className="ball-btn brightness bg-white"><FaGithub color="black"/></button></Link>
               </div>
               <ul className="tech-list flex gap-8 pt-12 px-1" >
                 {technologies.map((tech, index) => <TechCard key={index} tech={tech}/>)}
