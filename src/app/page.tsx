@@ -1,11 +1,11 @@
 import Image from "next/image";
-import { Header } from "./components/Header"
-import Hero from "./assets/hero.jpeg"
-import ProfilePhoto from "./assets/profile-photo.jpg"
+import { Header } from "@/components/Header";
+import Hero from "../assets/hero.jpeg"
+import ProfilePhoto from "../assets/profile-photo.jpg"
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 import { technologies } from "@/services/database";
-import { TechCard } from "./components/TechCard";
+import { TechCard } from "@/components/TechCard";
 
 export default function Home() {
   return (
