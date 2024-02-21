@@ -1,4 +1,4 @@
-import { SiDjango, SiExpress, SiJavascript, SiNextdotjs, SiPostgresql, SiPrisma, SiSass, SiTypescript } from "react-icons/si";
+import { SiDjango, SiExpress, SiJavascript, SiNextdotjs, SiPostgresql, SiPrisma, SiSass, SiTypescript, SiNestjs, SiZod } from "react-icons/si";
 import { FaCss3, FaHtml5, FaNodeJs, FaPython, FaReact } from "react-icons/fa";
 import styles from "./style.module.scss";
 
@@ -32,10 +32,14 @@ export const TechCard = ({tech}: TechProps) => {
             return <SiPostgresql />;
         case "express":
             return <SiExpress />;
+        case "nestjs":
+            return <SiNestjs />;
         case "python":
             return <FaPython />;
         case "django":
             return <SiDjango />;
+        case "zod":
+            return <SiZod />;
         }
     }
 

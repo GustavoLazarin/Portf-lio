@@ -24,13 +24,6 @@
   }
 }
 
-.hero {
-  height: 100vh;
-  width: auto;
-  mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0));
-  object-fit: cover;
-}
-
 .padding-x {
   padding-left: clamp(2rem, 10vw, 15rem);
   padding-right: clamp(2rem, 10vw, 15rem);
@@ -42,7 +35,10 @@
 
 .title-1 {
   font-size: clamp(1rem, 8vw , 3rem);
-  text-shadow: 0px 0px 12px #ffffff66;
+
+  &.light {
+    text-shadow: 0px 0px 12px #ffffff66;
+  }
 }
 
 .button {
@@ -95,24 +91,5 @@
   transition: .5s;
   &:hover {
     text-shadow: 0px 0px 20px rgb(255, 255, 255);
-  }
-}
-
-.tech-list {
-  width: 50%;
-  overflow: hidden;
-}
-
-.tech-card {
-  animation: slider 7s ease-in-out alternate-reverse infinite;
-  transition: opacity 0.5s ease-in-out;
-}
-
-@keyframes slider {
-  0% {
-    transform: translateX(-400px);
-  }
-  100% {
-    transform: translateX(0);
   }
 }
