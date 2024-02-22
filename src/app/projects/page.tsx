@@ -4,9 +4,9 @@ import { projects } from "@/services/database";
 
 const ProjectPage = () => {
     return (
-        <div className="bg-gray-0 h-full lg:h-screen w-screen">
+        <div className="bg-gray-0 h-full lg:h-screen w-screen overflow-hidden">
             <Header/>
-            <main className="w-full h-full pt-20 pb-10 padding-x flex flex-col justify-evenly gap-y-14 lg:gap-y-0 text-white">
+            <main className="w-full h-full pt-20 pb-10 padding-x flex flex-col justify-evenly gap-y-14 lg:gap-y-0 text-white fade-top">
                 <div>
                     <h1 className="title-1 font-bold">Projetos</h1>
                     <p className="text-gray-300">Lista dos meus principais projetos:</p>

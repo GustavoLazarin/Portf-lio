@@ -46,7 +46,7 @@ const ProjectCard = ({project}:IProjectCardProps) => {
     }
 
     return (
-        <li className="flex flex-col justify-between h-fit gap-6">
+        <li className="flex flex-col justify-between h-fit gap-6 border-white border-t-2 pt-6 lg:border-none lg:pt-0">
             <h2 className="text-2xl font-semibold">{project.title}</h2>
             <p className="text-gray-300 text-balance">{project.description}</p>
             <div className="flex gap-2 items-center flex-wrap">

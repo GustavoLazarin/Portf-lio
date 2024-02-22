@@ -44,7 +44,7 @@ export const TechCard = ({tech}: TechProps) => {
     }
 
     return (
-        <li className={`${styles.techCard} tech-card`}>
+        <li className={`${styles.techCard} tech-card hover:scale-110 duration-300`}>
             {icon(tech)}
             <span>{tech}</span>
         </li>

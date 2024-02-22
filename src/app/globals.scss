@@ -93,3 +93,33 @@
     text-shadow: 0px 0px 20px rgb(255, 255, 255);
   }
 }
+
+.fade-zoom {
+  animation: fade-zoom 1s ease-out;
+}
+
+@keyframes fade-zoom {
+  from {
+    transform: scale(3);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.fade-top {
+  animation: fade-top 1s ease-out;
+}
+
+@keyframes fade-top {
+  from {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

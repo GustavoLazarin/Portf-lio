@@ -16,11 +16,11 @@ const HomePage = () => {
   return (
       <div className="bg-brand-dark h-screen w-screen">
         <Header/>
-        <main className="flex relative h-screen">
+        <main className="flex relative h-screen overflow-hidden">
           <div className="absolute right-0 z-0">
             <Image src={Hero} height={800} width={800} alt="Hero" className={styles.hero}/>
           </div>
-          <div className="w-full mt-16 pb-10 padding-x flex flex-col justify-evenly text-white z-10">
+          <div className={`w-full mt-16 pb-10 padding-x flex flex-col justify-evenly text-white z-10 fade-zoom`}>
             <div className="flex items-center gap-6 mb-4">
               <div className="rounded-full object-cover overflow-hidden w-28 h-28">
                 <Image src={ProfilePhoto} width={130} height={130} alt="Gustavo Faccio Lazarin"></Image>

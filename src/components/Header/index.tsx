@@ -8,11 +8,11 @@ export const Header = () => {
             <div className="bg-white rounded-full h-max">
                 <Image src={Logo} height={50} width={50} alt="logo"/>
             </div>
-            <div className="flex gap-sm">
+            <nav className="flex gap-sm">
                 <Link href="/" className="text-white brightness">Início</Link>
                 <Link href="/projects" className="text-white brightness">Projetos</Link>
                 <Link href="/contact" className="text-white brightness">Contato</Link>
-            </div>
+            </nav>
         </header>
     );
 };
