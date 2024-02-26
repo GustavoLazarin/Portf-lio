@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import { Header } from "@/components/Header";
 import Hero from "../assets/hero.jpeg"
@@ -9,15 +7,15 @@ import { FaGithub } from "react-icons/fa";
 import { technologies } from "@/services/database";
 import { TechCard } from "@/components/TechCard";
 import styles from "./style.module.scss";
-import { TypeAnimation } from "react-type-animation";
+import AnimatedText from "@/components/AnimatedText";
 
 
 const HomePage = () => {
   return (
-      <div className="bg-brand-dark h-screen w-screen">
+      <div className="bg-brand-dark h-full w-screen">
         <Header/>
-        <main className="flex relative h-screen overflow-hidden">
-          <div className="absolute right-0 z-0">
+        <main className="flex relative min-h-screen overflow-hidden">
+          <div className="absolute right-0 z-0 h-full">
             <Image src={Hero} height={800} width={800} alt="Hero" className={styles.hero}/>
           </div>
           <div className={`w-full mt-16 pb-10 padding-x flex flex-col justify-evenly text-white z-10 fade-zoom`}>
@@ -29,15 +27,8 @@ const HomePage = () => {
             </div>
             <div className="flex flex-col gap-8">
               <h1 className="title-1 light font-semibold max-w-screen-md">Sou o Gustavo Faccio Lazarin, desenvolvedor web 
-              <TypeAnimation
-                sequence={[" Frontend.", 2000, " Backend.", 2000, " FullStack.", 5000]}
-                className="text-secondary"
-                preRenderFirstString={true}
-                speed={30}
-                wrapper="span"
-                repeat={Infinity}
-              /></h1>
-              
+                <AnimatedText/>
+              </h1>
               <p>Apaixonado por solucionar problemas de forma criativa e eficaz, sempre buscando aprimorar minhas habilidades.</p>
               <div className="flex gap-5">
                 <Link href="/projects"><button className="button primary">Ver projetos</button></Link>

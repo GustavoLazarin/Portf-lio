@@ -57,7 +57,7 @@ export const projects: IProject[] = [
     ],
     repository:
       "https://github.com/brunomoleta/eCommerce-FullStack-hackaton-kenzie",
-    deploy: "https://durvalmusicshop-brunomoleta.vercel.app/",
+    deploy: "https://durval-music-shop.vercel.app/",
   },
   {
     title: "Kenzie Feed",
